@@ -5,8 +5,8 @@ Takes first 38,000 responses from a dataset of 1,000,000 responses to a 50 quest
 I chose 38,000 because of GitHub's size limit for uploading files. 
 
 The original datafile was called data-final.csv. I ran the following code to create the smaller, modified data file.
-* `df = pd.read_csv('data-final.csv', delimiter="/t") `
-* `df.head(38000).to_csv('data-final-modified.csv' Index=False)`
+* `df = pd.read_csv('data-final.csv', delimiter="\t") `
+* `df.head(38000).to_csv('data-final-modified.csv', Index=False)`
 
 Results of text are displayed on graphs. These graphs will be displayed on a webserver.
 
