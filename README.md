@@ -2,9 +2,14 @@
 Build own personality system like MBTI using simple machine learning. 
 
 Takes first 38,000 responses from a dataset of 1,000,000 responses to a 50 question questionaire based on the Big Five personality test.
-I chose 38,000 because of GitHub's size limit for uploading files. All I did was import pandas library and do df.head(38000).to_csv('data-final-modified.csv' Index=False)
+I chose 38,000 because of GitHub's size limit for uploading files. All I did was import pandas library and do: 
+df.head(38000).to_csv('data-final-modified.csv' Index=False)
 
 Results of text are displayed on graphs. These graphs will be displayed on a webserver.
+
+## If running on Visual Studio Code
+You must change environment to 'base':conda. I used Python3.8.5 64-bit ('base':conda)
+You must also install pandas,numpy, and sklearn.
 
 ## The original data file with 1,000,000 responses
 If you want to download the original data file and run the program using 1,000,000 responses. 
